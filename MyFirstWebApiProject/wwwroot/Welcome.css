@@ -1,0 +1,149 @@
+﻿body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top right, #7abb76, #cfd2d8);
+    color: #0e0f0f;
+    font-size: 20px;
+}
+
+form {
+    max-width: 400px;
+    padding: 21px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
+    color: #bd4ca2;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    button:hover {
+        background-color: #005daa;
+    }
+
+a {
+    color: #0078d4;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+.progressStyle {
+    background-image: linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%), linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), linear-gradient(left, #09c, #f44);
+    border-radius: 2px;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+/* Custom Alert Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 400px; /* Adjust the max-width as per your preference */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .close:hover {
+        color: black;
+    }
+
+/* Additional styles for a fantastic look */
+.modal-content p {
+    font-size: 20px;
+    color: #bd4ca2;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Add these styles to your CSS file */
+
+.progressStyle {
+    appearance: none;
+    height: 15px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+    /* Styling for the progress value based on its max value (4 in this case) */
+    .progressStyle::-webkit-progress-value {
+        background: linear-gradient(to right, #ff0000, #ff6600, #ffcc00, #33cc33); /* Change the colors as needed */
+    }
+
+    /* Styling for the progress bar track */
+    .progressStyle::-webkit-progress-bar {
+        background-color: #f0f0f0; /* Set a background color for the track */
+    }
+
+/* Add these styles to your CSS file */
+
+.progressStyle {
+    appearance: none;
+    height: 15px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+    /* Styling for the progress value based on its max value (4 in this case) */
+    .progressStyle::-webkit-progress-value {
+        background: linear-gradient(to right, #ff0000, #ff6600, #ffcc00, #33cc33); /* Change the colors as needed */
+    }
+
+    /* Styling for the progress bar track */
+    .progressStyle::-webkit-progress-bar {
+        background-color: #f0f0f0; /* Set a background color for the track */
+    }

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Welcome.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js" defer></script>
+    <link rel="stylesheet" href="Welcome.css" />
+    <title>Register Page</title>
+</head>
+<body>
+    <form id="registrationForm">
+        <section>
+            <label for="fnInput">First Name</label>
+            <input id="fnInput" type="text" required />
+        </section>
+
+        <section>
+            <label for="lnInput">Last Name</label>
+            <input id="lnInput" type="text" required />
+        </section>
+
+        <section>
+            <label for="usInput">User Name</label>
+            <input id="usInput" type="text" required />
+        </section>
+
+        <section>
+            <label for="passInput">Password</label>
+            <input id="passInput" type="password" required onchange="checkPassword()" />
+            <progress class="progressStyle" id="password-strength-progress" max="4"></progress>
+            <p id="password-strength-text"></p>
+        </section>
+
+        <section>
+            <label for="emailInput">Email</label>
+            <input id="emailInput" type="email" required />
+        </section>
+
+        <section>
+            <button type="button" onclick="registerFunc()">REGISTER</button>
+        </section>
+
+        <section>
+            <a href="Login.html">Already have an account? Login here.</a>
+        </section>
+
+    </form>
+    <div id="customAlert" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCustomAlert()">&times;</span>
+            <p id="alertMessage"></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="Welcome.js" defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js" defer></script>
+    <link rel="stylesheet" href="Update.css" />
+    <title>Update Page</title>
+</head>
+<body>
+    <div id="updateInputs">
+        <form id="updateForm">
+            <section>
+                <label for="fnInput">First Name</label>
+                <input id="fnInput" type="text" />
+            </section>
+
+            <section>
+                <label for="lnInput">Last Name</label>
+                <input id="lnInput" type="text" />
+            </section>
+
+            <section>
+                <label for="usInput">User Name</label>
+                <input id="usInput" type="text" />
+            </section>
+
+            <section>
+                <label for="passInput">Password</label>
+                <input id="passInput" type="password" onchange="checkPassword()" />
+                <progress class="progressStyle" id="password-strength-progress" max="4"></progress>
+                <p id="password-strength-text"></p>
+            </section>
+
+            <section>
+                <label for="emailInput">Email</label>
+                <input id="emailInput" type="email" />
+            </section>
+
+            <section>
+                <button type="button" onclick="updateFunc()">UPDATE</button>
+            </section>
+
+        </form>
+        <div id="customAlert" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeCustomAlert()">&times;</span>
+                <p id="alertMessage"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
